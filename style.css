@@ -4,6 +4,7 @@
     font-size: 11px; 
     text-align: center; 
     color: var(--neutral-white);
+    margin-top: 50px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -74,6 +75,7 @@ p {
     gap: 10px;
 
     border-radius: 15px;
+    box-shadow: 1em 1em 5em;
 }
 
 img {
