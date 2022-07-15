@@ -44,29 +44,38 @@
 
     <p class="avatar">
       <img src="./images/image-avatar.png" alt="image-avatar" id="avatar">
-      <span id="creator"> Creation of <a href="#" class="hover">Jules Wyvern</a></span>
+      <span id="creator"> Creation of <a href="#" class="hover-2">Jules Wyvern</a></span>
     </p>
     
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Andesa Putra</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Andesaputra" target="_blank">Andesa Putra</a>.
   </div>
 
 
   <script>
-    const a = document.querySelector("a"); //selecting the header name
-    const topImg = document.querySelector(".top-img");
+    const h1 = document.querySelector(".hover"); //selecting the header name for h1 function
+    const a = document.querySelector(".hover-2"); //selecting the header name for a function
 
+    const topImg = document.querySelector(".top-img");
+    
+    h1.addEventListener("mouseover", () => {
+    topImg.classList.toggle("opacity");
+    }); //function for h1
+
+    h1.addEventListener("mouseleave", () => {
+    topImg.classList.toggle("opacity");
+    }); //function for h1
 
     a.addEventListener("mouseover", () => {
     topImg.classList.toggle("opacity");
-    });
+    }); //function for a
 
     a.addEventListener("mouseleave", () => {
     topImg.classList.toggle("opacity");
-    });
+    }); //function for a
   </script>
 </body>
 </html>
